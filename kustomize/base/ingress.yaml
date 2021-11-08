@@ -12,7 +12,7 @@ spec:
             pathType: ImplementationSpecific
             backend:
               serviceName: hello-gitops
-              servicePort: http
+              servicePort: 80
               
             
               
