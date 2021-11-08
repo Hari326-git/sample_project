@@ -11,11 +11,8 @@ spec:
           - path: /
             pathType: ImplementationSpecific
             backend:
-              serviceName: nginx
-              servicePort: 80
-              - path : /
-            backend:
               serviceName: hello-gitops
-              servicePort: 8080
+              servicePort: http
+              
             
               
