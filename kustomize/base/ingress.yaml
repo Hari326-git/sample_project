@@ -10,6 +10,6 @@ spec:
             pathType: Prefix
             backend:
               serviceName: hello-gitops
-              servicePort: http
+              servicePort: 80
             
               
