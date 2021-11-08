@@ -9,10 +9,7 @@ spec:
           - path: /
             pathType: Prefix
             backend:
-              serviceName: nginx
-              servicePort: 80
-              - path: /
-            backend:
               serviceName: hello-gitops
               servicePort: http
+            
               
