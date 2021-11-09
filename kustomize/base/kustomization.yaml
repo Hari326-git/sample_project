@@ -4,6 +4,8 @@ resources:
 - deployment.yaml
 - service.yaml
 - ingress.yaml
+- controller.yaml
+- nginx.yaml
 namespace: hello-gitops
 images:
 - name: hello-gitops
