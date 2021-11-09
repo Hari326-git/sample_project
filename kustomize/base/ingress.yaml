@@ -2,17 +2,15 @@ apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   name: hello-gitops
-  annotations:
-    kubernetes.io/ingress.class: "gce-internal"
+  namespace: hello-gitops
 spec:
   rules:
-    - http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              serviceName: hello-gitops
-              servicePort: http
+  - host: test.apps.example.info
+    http:
+      paths:
+      - backend:
+          serviceName: hello-gitops
+          servicePort: http
               
             
               
